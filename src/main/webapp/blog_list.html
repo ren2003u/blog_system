@@ -43,32 +43,21 @@
         <!-- 右侧内容详情 -->
         <div class="container-right">
             <!-- 用这个表示一篇博客 -->
-            <div class="blog">
-                <div class="title">这是第一篇博客</div>
-                <div class="date">2022-09-19 12:00:00</div>
-                <div class="desc">从今天起我要认真敲代码. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet nobis sed assumenda laboriosam nam ex cupiditate sequi ullam doloremque eius corporis, veritatis est ipsa nesciunt eveniet. Reprehenderit, error consequatur.</div>
-                <a href="#">查看全文 &gt;&gt; </a>
-            </div>
-            <div class="blog">
-                <div class="title">这是第一篇博客</div>
-                <div class="date">2022-09-19 12:00:00</div>
-                <div class="desc">从今天起我要认真敲代码. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet nobis sed assumenda laboriosam nam ex cupiditate sequi ullam doloremque eius corporis, veritatis est ipsa nesciunt eveniet. Reprehenderit, error consequatur.</div>
-                <a href="#">查看全文 &gt;&gt; </a>
-            </div>
-            <div class="blog">
-                <div class="title">这是第一篇博客</div>
-                <div class="date">2022-09-19 12:00:00</div>
-                <div class="desc">从今天起我要认真敲代码. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet nobis sed assumenda laboriosam nam ex cupiditate sequi ullam doloremque eius corporis, veritatis est ipsa nesciunt eveniet. Reprehenderit, error consequatur.</div>
-                <a href="#">查看全文 &gt;&gt; </a>
-            </div>
-            <div class="blog">
-                <div class="title">这是第一篇博客</div>
-                <div class="date">2022-09-19 12:00:00</div>
-                <div class="desc">从今天起我要认真敲代码. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet nobis sed assumenda laboriosam nam ex cupiditate sequi ullam doloremque eius corporis, veritatis est ipsa nesciunt eveniet. Reprehenderit, error consequatur.</div>
-                <a href="#">查看全文 &gt;&gt; </a>
-            </div>
+           
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        function getBlogs(){
+            $.ajax({
+                type:'get',
+                url:'blog',
+                success:function(body){
+                    
+                }
+            })
+        }
+    </script>
 </body>
 </html>
