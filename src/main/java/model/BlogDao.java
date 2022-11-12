@@ -51,7 +51,7 @@ public class BlogDao {
                 content = content.substring(0,100);
             }
             blog.setContent(content);
-            blog.setPostTime(resultSet.getTimestamp("timestamp"));
+            blog.setPostTime(resultSet.getTimestamp("postTime"));
             blogList.add(blog);
         }
         DBUtil.close(connection,preparedStatement,resultSet);
@@ -90,7 +90,7 @@ public class BlogDao {
         PreparedStatement preparedStatement = null;
 
         connection = DBUtil.getConnection();
-        String sql = "delete * from blog where blogId = ?";
+        String sql = "delete from blog where blogId = ?";
         preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setInt(1,blogId);
         int ret = preparedStatement.executeUpdate();

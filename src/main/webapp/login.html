@@ -23,18 +23,20 @@
     <!-- 构造一个页面版心 -->
     <div class="login-container">
         <div class="login-dialog">
-            <h3>登录</h3>
-            <div class="row">
-                <span>用户名</span>
-                <input type="text" id="username">
-            </div>
-            <div class="row">
-                <span>密码</span>
-                <input type="password" id="password">
-            </div>
-            <div class="row">
-                <input type="button" value="提交" id="submit">
-            </div>
+            <form action="login" method="post">
+                <h3>登录</h3>
+                <div class="row">
+                    <span>用户名</span>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="row">
+                    <span>密码</span>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="row">
+                    <input type="submit" value="提交" id="submit">
+                </div>
+            </form>
         </div>
     </div>
 </body>

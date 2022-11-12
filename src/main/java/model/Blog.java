@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 
 public class Blog {
     private int blogId;
@@ -39,9 +40,11 @@ public class Blog {
         this.userId = userId;
     }
 
-    public Timestamp getPostTime() {
-        return postTime;
+    public String getPostTime() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return simpleDateFormat.format(this.postTime);
     }
+
 
     public void setPostTime(Timestamp postTime) {
         this.postTime = postTime;

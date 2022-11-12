@@ -13,7 +13,7 @@ public class UserDao {
         ResultSet resultSet = null;
 
         connection = DBUtil.getConnection();
-        String sql = "select * from user where userId = ?";
+        String sql = "select * from user where username = ?";
         preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setString(1,username);
 
